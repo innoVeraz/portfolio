@@ -1,6 +1,10 @@
 "use client";
 
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 import Image from "next/image";
 import vera from "@/public/vera.jpg";
@@ -12,8 +16,20 @@ import { FaGithubSquare } from "react-icons/fa";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 
 export default function Intro() {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Home");
+    }
+  }, [setActiveSection, inView]);
+
   return (
     <section
+      ref={ref}
       id="home"
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
