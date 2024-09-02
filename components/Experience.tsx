@@ -6,10 +6,10 @@ import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 // import { useTheme } from "@/context/theme-context";
 import SectionHeading from "./SectionHeading";
-import { VerticalTimeline, VerticalTimelineElement } from "./VerticalTimeline";
+import { VerticalTimeline, VerticalTimelineElement } from "./vertical-timeline";
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+  const { ref } = useSectionInView("Experience", 0.75);
   //   const { theme } = useTheme();
 
   const theme = "light";
