@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 import Image from "next/image";
-import vera from "@/public/vera.jpg";
+import vera from "@/public/vera2.jpg";
 
 import Link from "next/link";
 
@@ -36,7 +36,7 @@ export default function Intro() {
               src={vera}
               alt="profile pic"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.2rem] border-white shadow-xl"
+              className="w-24 h-24 object-cover rounded-md "
             />
           </motion.div>
         </div>
@@ -47,11 +47,11 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, my name is Veronica.</span> I&apos;m
-        a <span className="font-bold">Full Stack Developer</span> with{" "}
-        <span className="font-bold">e-commerce</span> experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="font-regular">Hello, my name is Veronica.</span>{" "}
+        I&apos;m a <span className="font-semibold">Full Stack Developer</span>{" "}
+        with <span className="font-semibold">E-Commerce</span> experience. I
+        specialize in{" "}
+        <span className=" font-semibold underline">React and Next.js</span>.
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
@@ -73,8 +73,8 @@ export default function Intro() {
         </Link>
 
         <a
-          className="group text-lg px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/cv-veronica.pdf"
+          className="group text-lg px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-[#5580A0] text-[#314b5f] bg-transparent"
+          href="/VB.resume.pdf"
           download
         >
           Download CV <HiDownload className="opacity-60 transition" />
@@ -82,7 +82,7 @@ export default function Intro() {
 
         <div className="flex gap-4">
           <a
-            className=" hover:text-gray-950 text-[24px] flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className=" hover:text-gray-950 text-[35px] flex items-center gap-2  focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:text-white/60"
             href="https://www.linkedin.com/in/veronica-b-a863b567/"
             target="_blank"
           >
@@ -90,7 +90,7 @@ export default function Intro() {
           </a>
 
           <a
-            className="flex items-center gap-2 rounded-full text-[26px] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="flex items-center gap-2  text-[38px] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:text-white/60"
             href="https://github.com/innoVeraz"
             target="_blank"
           >
