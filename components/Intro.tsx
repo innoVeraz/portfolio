@@ -47,11 +47,15 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-regular">Hello, my name is Veronica.</span>{" "}
-        I&apos;m a <span className="font-semibold">Full Stack Developer</span>{" "}
-        with <span className="font-semibold">E-Commerce</span> experience. I
-        specialize in{" "}
-        <span className=" font-semibold underline">React and Next.js</span>.
+        <h1>Hello, my name is Veronica.</h1>
+        <p>
+          I&apos;m a <strong>Front End Developer</strong> with{" "}
+          <strong>Fullstack</strong> skills. I specialize in{" "}
+          <strong>
+            <u>React and Next.js</u>
+          </strong>
+          .
+        </p>
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
