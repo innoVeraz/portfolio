@@ -36,7 +36,7 @@ export default function Intro() {
               src={vera}
               alt="profile pic"
               priority={true}
-              className="w-24 h-24 object-cover rounded-md "
+              className="w-52 h-52 object-cover rounded-full "
             />
           </motion.div>
         </div>
@@ -47,14 +47,13 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <h1>Hello, my name is Veronica.</h1>
+        <p>Veronica Bergström</p>
         <p>
-          I&apos;m a <strong>Front End Developer</strong> with{" "}
-          <strong>Fullstack</strong> skills. I specialize in{" "}
-          <strong>
-            <u>React and Next.js</u>
-          </strong>
-          .
+          <strong>Front End Developer</strong>
+        </p>
+        <p>
+          {" "}
+          <u>React and Next.js</u>
         </p>
       </motion.h1>
       <motion.div
@@ -77,7 +76,7 @@ export default function Intro() {
         </Link>
 
         <a
-          className="group text-lg px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-[#5580A0] text-[#314b5f] bg-transparent"
+          className="group text-lg px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-[#5580A0] text-[#314b5f] bg-transparent dark:text-white dark:border-white"
           href="/VB.resume.pdf"
           download
         >
@@ -94,7 +93,7 @@ export default function Intro() {
           </a>
 
           <a
-            className="flex items-center gap-2  text-[38px] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:text-white/60"
+            className="flex items-center gap-2  text-[38px] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:text-white"
             href="https://github.com/innoVeraz"
             target="_blank"
           >
