@@ -11,6 +11,7 @@ import { useTheme } from "@/context/theme-context";
 export default function Experience() {
   const { ref } = useSectionInView("Experience", 0.75);
   const { theme } = useTheme();
+  console.log(theme);
 
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
@@ -36,8 +37,7 @@ export default function Experience() {
               date={item.date}
               icon={item.icon}
               iconStyle={{
-                background:
-                  theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
+                background: theme === "light" ? "white" : "#334155",
                 fontSize: "1.5rem",
               }}
             >
