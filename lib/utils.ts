@@ -1,3 +1,6 @@
+import { ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+
 export const isValid = (value: unknown, maxLength: number): value is string => {
   return typeof value === "string" && value.trim().length > 0;
 };
@@ -17,3 +20,7 @@ export const getErrorMessage = (error: unknown): string => {
 
   return "Something went wrong";
 };
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
