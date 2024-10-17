@@ -110,8 +110,8 @@ export const ModalBody = ({
             initial={{
               opacity: 0,
               scale: 0.5,
-              rotateX: 40,
-              y: 40,
+              //   rotateX: 40,
+              //   y: 40,
             }}
             animate={{
               opacity: 1,
@@ -119,16 +119,16 @@ export const ModalBody = ({
               rotateX: 0,
               y: 0,
             }}
-            exit={{
-              opacity: 0,
-              scale: 0.8,
-              rotateX: 10,
-            }}
-            transition={{
-              type: "spring",
-              stiffness: 260,
-              damping: 15,
-            }}
+            // exit={{
+            //   opacity: 0,
+            //   scale: 0.8,
+            //   rotateX: 10,
+            // }}
+            // transition={{
+            //   type: "spring",
+            //   stiffness: 250,
+            //   damping: 15,
+            // }}
           >
             <CloseIcon />
             {children}
@@ -161,12 +161,7 @@ export const ModalFooter = ({
   className?: string;
 }) => {
   return (
-    <div
-      className={cn(
-        "flex justify-end p-4 bg-gray-100 dark:bg-neutral-900",
-        className
-      )}
-    >
+    <div className={cn("flex justify-end p-4 dark:bg-neutral-900", className)}>
       {children}
     </div>
   );
